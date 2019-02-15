@@ -23,12 +23,13 @@
 }
  
 ul {
-  width: 48%;  
+  width: 100%;  
   display: flex;
   flex-wrap: wrap;
 } 
 
 li {
+  width:45%;
   list-style: none;
 }
 

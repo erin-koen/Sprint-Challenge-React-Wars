@@ -25,12 +25,17 @@ In this challenge, create a web page that presents a styled list of Star Wars ch
 Demonstrate your understanding of this Sprint's concepts by answering the following free-form questions. Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager.
 
 - [ ] What is React JS and what problems does it try and solve? Support your answer with concepts introduced in class and from your personal research on the web.
+* React JS is a javascript library that allows to render UI under rapidly changing conditions. Instead of making continuous calls the the DOM, it watches state, and when it changes, renders those changes in a Virtual DOM. It then DIFFs the DOM and only changes those elements that need it instead of rerendering the entire app. It allows for much greater scalability, everything in it is a component and complex states are managed without increasing heavy calls to the DOM. 
+
 
 - [ ] What does it mean to _think_ in react?
+THinking in component hierarchies. Which component is the parent? Which child components will need access to which parts of the state data? How does information flow from top to bottom? I"ve found it super helpful to map out family trees, and make a list of required data for each child, then building out the subsequetn propl drilling on the parent to make sure the data is available. 
 
 - [ ] Describe state.
+* State is the data to which individual components have access. It's not mutable directly, only via setState. It can be passed downwards in the component tree - from parent to child - via props. 
 
 - [ ] Describe props.
+* As above. 
 
 ## Project Set Up
 
